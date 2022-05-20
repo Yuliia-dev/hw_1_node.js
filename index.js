@@ -48,4 +48,7 @@ async function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-invokeAction(argv);
+// Функція миттєвого виклику
+(async () => {
+  await invokeAction(argv);
+})();
